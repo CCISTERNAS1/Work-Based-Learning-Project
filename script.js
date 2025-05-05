@@ -1,8 +1,18 @@
-<script>
-  document.querySelectorAll('.nav-btn').forEach(link => {
-    link.addEventListener('click', () => {
-      document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
-      link.classList.add('active');
+window.addEventListener("load", () => {
+  const preloader = document.getElementById("preloader");
+
+  if (preloader) {
+    setTimeout(() => {
+      preloader.classList.add("hidden");
+    }, 1500); 
+  }
+
+
+  const navButtons = document.querySelectorAll(".nav-btn");
+  navButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      navButtons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
     });
   });
-</script>
+});
