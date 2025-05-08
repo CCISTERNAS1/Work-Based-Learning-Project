@@ -266,48 +266,30 @@ textarea.futuristic-input {
 }
 
 /* On desktop, navbar links are horizontal and compact */
-@media (min-width: 992px) {
-  .navbar-collapse {
-      display: flex !important;
-      justify-content: center; /* Center the links */
-      position: initial !important;
-      width: auto !important;
-      background-color: transparent !important;
-      transition: none !important;
-  }
-
-  .navbar-nav {
-      flex-direction: row;
-  }
-
-  .navbar-nav .nav-item {
-      padding: 10px 15px; /* Reduced padding for compactness */
-  }
-}
-
 /* Mobile navbar collapse styling */
 @media (max-width: 991px) {
   .navbar-collapse {
-      position: fixed;
-      top: 0;
-      right: -250px;
-      width: 250px;
-      height: 100%;
-      background-color: #1a1a1a;
-      transition: right 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #1a1a1a;
+    transition: right 0.3s ease-in-out;
   }
 
   .navbar-collapse.show {
-      right: 0;
+    right: 0;
   }
 
   .navbar-nav {
-      flex-direction: column;
-      margin-top: 50px;
+    flex-direction: column;
+    margin-top: 50px;
   }
 
   .navbar-nav .nav-item {
-      text-align: right;
-      padding: 15px;
+    text-align: right;
+    padding: 15px;
   }
 }
+
