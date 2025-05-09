@@ -6,19 +6,18 @@ window.addEventListener("load", () => {
 
   if (preloader) {
     setTimeout(() => {
+      console.log("Preloader hiding...");
       preloader.classList.add("hidden");
-
       if (navbar) {
         navbar.classList.add("navbar-expand-animate");
       }
-
+    
       setTimeout(() => {
         if (heroSection) {
           heroSection.classList.add("fade-in-up");
         }
-      }, 500); // Delay for hero section animation
-
-    }, 1500); // Initial preloader duration
+      }, 500);
+    }, 1500);
   }
 
   navButtons.forEach(button => {

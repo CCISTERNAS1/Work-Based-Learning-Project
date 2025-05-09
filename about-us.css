@@ -1,0 +1,146 @@
+
+.about-us {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Team Section */
+.team {
+    margin-top: 40px;
+}
+
+.team h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.team-member {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.team-member h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Mission Section */
+.mission {
+    margin-top: 40px;
+}
+
+.mission h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.mission p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Values Section */
+.values {
+    margin-top: 40px;
+}
+
+.values h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.values ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.values ul li {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .team-member {
+        display: block;
+        margin: 20px auto;
+    }
+
+    .about-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-header p {
+        font-size: 1.1rem;
+    }
+}
+
+.navbar {
+    border-radius: 30px; /* Makes the navbar pill-shaped */
+    background-color: #333; /* Change navbar background color */
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px; /* Adds spacing between the navbar items */
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 20px; /* Add padding to make the navbar items more pill-like */
+    border-radius: 50px; /* Makes each navbar item pill-shaped */
+    color: white; /* Sets text color */
+    font-size: 1rem; /* Adjust font size */
+    font-weight: bold; /* Makes text bold */
+}
+
+/* Hover Effect */
+.navbar-nav .nav-link:hover {
+    color: white; /* Keep the text white on hover */
+}
+
+/* Active Nav Link */
+.navbar-nav .nav-link.active {
+    background-color: #17a2b8; /* Different color for active link */
+    color: white;
+}
+
+/* Ensures that footer sticks at the bottom */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.about-us {
+    flex: 1; /* Takes up the available space */
+}
