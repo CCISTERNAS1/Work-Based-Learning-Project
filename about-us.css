@@ -1,7 +1,52 @@
+/* ========== Base Styles ========== */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Assuming a dark background to contrast white text */
+}
 
+/* ========== Navbar ========== */
+.navbar {
+    border-radius: 30px;
+    background-color: #333;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px;
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: white;
+}
+
+.navbar-nav .nav-link.active {
+    background-color: #17a2b8;
+    color: white;
+}
+
+/* ========== About Us Section ========== */
 .about-us {
     padding: 60px 20px;
+    background-color: transparent;
     text-align: center;
+    flex: 1;
+}
+
+.about-us h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 40px;
 }
 
 .about-header h1 {
@@ -15,35 +60,58 @@
     color: white;
 }
 
-/* Team Section */
-.team {
-    margin-top: 40px;
+.about-content {
+    max-width: 500px;
+    color: white;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 0 auto;
 }
 
-.team h2 {
-    font-size: 2rem;
-    color: #333;
+/* Layout for larger screens */
+@media (min-width: 768px) {
+    .about-us .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content {
+        align-self: flex-start;
+        margin-left: 0;
+        margin-right: auto;
+        text-align: justify;
+    }
 }
 
-.team-member {
-    display: inline-block;
-    margin: 20px;
-    text-align: center;
+/* ========== About Layout Section ========== */
+.about-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
-.team-member img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
+.about-image {
+    width: 300px;
+    height: 400px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
-.team-member h3 {
-    margin-top: 10px;
-    color: #333;
+/* Optional: Hover effect for image */
+.about-image:hover {
+    background-color: #ccc;
+    cursor: pointer;
 }
 
-/* Mission Section */
+/* ========== Mission Section ========== */
 .mission {
     margin-top: 40px;
 }
@@ -58,7 +126,7 @@
     color: #666;
 }
 
-/* Values Section */
+/* ========== Values Section ========== */
 .values {
     margin-top: 40px;
 }
@@ -79,8 +147,17 @@
     margin: 5px 0;
 }
 
+/* ========== Footer ========== */
+footer {
+    margin-top: auto;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
 
-/* Responsiveness */
+/* ========== Responsive Adjustments ========== */
 @media (max-width: 768px) {
     .team-member {
         display: block;
@@ -94,53 +171,4 @@
     .about-header p {
         font-size: 1.1rem;
     }
-}
-
-.navbar {
-    border-radius: 30px; /* Makes the navbar pill-shaped */
-    background-color: #333; /* Change navbar background color */
-}
-
-.navbar-nav .nav-item {
-    margin-left: 15px; /* Adds spacing between the navbar items */
-}
-
-.navbar-nav .nav-link {
-    padding: 10px 20px; /* Add padding to make the navbar items more pill-like */
-    border-radius: 50px; /* Makes each navbar item pill-shaped */
-    color: white; /* Sets text color */
-    font-size: 1rem; /* Adjust font size */
-    font-weight: bold; /* Makes text bold */
-}
-
-/* Hover Effect */
-.navbar-nav .nav-link:hover {
-    color: white; /* Keep the text white on hover */
-}
-
-/* Active Nav Link */
-.navbar-nav .nav-link.active {
-    background-color: #17a2b8; /* Different color for active link */
-    color: white;
-}
-
-/* Ensures that footer sticks at the bottom */
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.about-us {
-    flex: 1; /* Takes up the available space */
 }
