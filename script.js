@@ -1,29 +1,17 @@
-window.addEventListener("load", () => {
+window.addEventListener("load", function () {
   const preloader = document.getElementById("preloader");
-  const heroSection = document.querySelector(".hero-section");
-  const navbar = document.querySelector(".navbar");
-  const navButtons = document.querySelectorAll(".nav-btn");
+  const navbar = document.querySelector(".techy-navbar");
 
-  if (preloader) {
-    setTimeout(() => {
-      console.log("Preloader hiding...");
-      preloader.classList.add("hidden");
-      if (navbar) {
-        navbar.classList.add("navbar-expand-animate");
-      }
-    
-      setTimeout(() => {
-        if (heroSection) {
-          heroSection.classList.add("fade-in-up");
-        }
-      }, 500);
-    }, 1500);
-  }
+  // Hide the preloader after a short delay
+  setTimeout(() => {
+    preloader.classList.add("hidden");
 
-  navButtons.forEach(button => {
-    button.addEventListener("click", () => {
-      navButtons.forEach(btn => btn.classList.remove("active"));
-      button.classList.add("active");
-    });
-  });
+    // Allow scrolling again
+    document.body.classList.remove("preload");
+
+    // Animate the navbar in
+    if (navbar) {
+      navbar.classList.add("show-navbar");
+    }
+  }, 800); // Adjust delay if needed
 });

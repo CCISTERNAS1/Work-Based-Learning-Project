@@ -7,12 +7,12 @@
 .about-header h1 {
     font-size: 3rem;
     margin-bottom: 20px;
-    color: #333;
+    color: white;
 }
 
 .about-header p {
     font-size: 1.2rem;
-    color: #666;
+    color: white;
 }
 
 /* Team Section */
