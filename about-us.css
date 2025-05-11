@@ -61,48 +61,85 @@ body {
 }
 
 .about-content {
-    max-width: 500px;
-    color: white;
-    text-align: justify;
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin: 0 auto;
+    flex: 1 1 500px;
+    max-width: 567px;
+    height: 662px;
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #333;
 }
 
 /* Layout for larger screens */
-@media (min-width: 768px) {
-    .about-us .container {
-        display: flex;
+@media (max-width: 768px) {
+    .about-layout {
         flex-direction: column;
-        align-items: center;
+        padding: 40px 20px;
+    }
+
+    .about-image,
+    .about-content {
+        max-width: 100%;
+        width: 100%;
     }
 
     .about-content {
-        align-self: flex-start;
-        margin-left: 0;
-        margin-right: auto;
-        text-align: justify;
+        padding: 30px;
     }
 }
 
 /* ========== About Layout Section ========== */
 .about-layout {
+    position: relative;
+    z-index: 1;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 40px;
     flex-wrap: wrap;
+    padding: 80px 20px;
+    min-height: 100vh;
+    text-align: left;
+}
+
+/* Background rectangle behind content */
+.about-layout::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;  /* Make the rectangle width fit the container */
+    background-color: #62729C; /* Soft dark gray or choose your color */
+    height: 438px; /* Height will match the content */
+    z-index: -1;  /* Ensure it stays behind the content */
+    padding: 40px 0; /* Adjust this padding to match the content height */
+    max-width: 1067px;
+    margin-top: 400px;
+}
+
+/* Adjust the content box */
+.about-image,
+.about-content {
+    position: relative; /* Ensure content stays on top of the rectangle */
+    z-index: 1;
 }
 
 .about-image {
-    width: 300px;
-    height: 400px;
-    background-color: #ddd;
+    flex: 1 1 300px;
+    max-width: 389px;
+    height: 621px;
+    background-color: #e0e0e0;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    color: #000;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
 }
 
 /* Optional: Hover effect for image */
@@ -111,41 +148,7 @@ body {
     cursor: pointer;
 }
 
-/* ========== Mission Section ========== */
-.mission {
-    margin-top: 40px;
-}
 
-.mission h2 {
-    font-size: 2rem;
-    color: #333;
-}
-
-.mission p {
-    font-size: 1.2rem;
-    color: #666;
-}
-
-/* ========== Values Section ========== */
-.values {
-    margin-top: 40px;
-}
-
-.values h2 {
-    font-size: 2rem;
-    color: #333;
-}
-
-.values ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.values ul li {
-    font-size: 1.2rem;
-    color: #666;
-    margin: 5px 0;
-}
 
 /* ========== Footer ========== */
 footer {
@@ -171,4 +174,37 @@ footer {
     .about-header p {
         font-size: 1.1rem;
     }
+
+    .about-layout {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .about-image,
+    .about-content {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .about-content {
+        padding: 30px;
+    }
+}
+
+.about-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.background-box {
+    position: absolute;
+    width: 1067px;
+    height: 438px;
+    background-color: #1e1e1e; /* Soft dark gray for black background */
+    border-radius: 20px;
+    z-index: 0;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
