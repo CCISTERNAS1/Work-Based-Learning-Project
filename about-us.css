@@ -74,23 +74,27 @@ body {
 }
 
 /* Layout for larger screens */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .about-layout {
         flex-direction: column;
         padding: 40px 20px;
+        align-items: center;
     }
 
     .about-image,
     .about-content {
-        max-width: 100%;
         width: 100%;
+        max-width: 500px;
     }
 
     .about-content {
         padding: 30px;
     }
-}
 
+    .about-layout::before {
+        display: none; 
+    }
+}
 /* ========== About Layout Section ========== */
 .about-layout {
     position: relative;
