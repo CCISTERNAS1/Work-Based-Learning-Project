@@ -209,3 +209,12 @@ footer {
     left: 50%;
     transform: translateX(-50%);
 }
+
+.description {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    font-size: 1.2rem;
+    line-height: 2;
+    text-align: justify;
+}
