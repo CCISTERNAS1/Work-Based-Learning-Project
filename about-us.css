@@ -11,7 +11,7 @@ body {
 /* ========== Navbar ========== */
 .navbar {
     border-radius: 30px;
-    background-color: #333;
+     background: linear-gradient(135deg, rgba(0, 0, 50, 0.6), rgba(0, 100, 150, 0.6));
 }
 
 .navbar-nav .nav-item {
@@ -70,7 +70,7 @@ body {
     font-size: 1rem;
     line-height: 1.7;
     color: #333;
-    margin-top: 65px;
+    margin-top: 60px;
 }
 
 /* Layout for larger screens */
