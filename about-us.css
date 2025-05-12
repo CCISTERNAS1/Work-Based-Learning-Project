@@ -5,7 +5,7 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #000; /* Assuming a dark background to contrast white text */
+    background-color: #000; 
 }
 
 /* ========== Navbar ========== */
@@ -70,6 +70,7 @@ body {
     font-size: 1rem;
     line-height: 1.7;
     color: #333;
+    margin-top: 65px;
 }
 
 /* Layout for larger screens */
@@ -109,21 +110,21 @@ body {
     content: "";
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 47%;
     transform: translateX(-50%);
-    width: 100%;  /* Make the rectangle width fit the container */
-    background-color: #62729C; /* Soft dark gray or choose your color */
-    height: 438px; /* Height will match the content */
-    z-index: -1;  /* Ensure it stays behind the content */
-    padding: 40px 0; /* Adjust this padding to match the content height */
-    max-width: 1067px;
+    width: 100%;  
+    background-color: #62729C; 
+    height: 438px; 
+    z-index: -1;  
+    padding: 40px 0; 
+    max-width: 1030px;
     margin-top: 400px;
 }
 
 /* Adjust the content box */
 .about-image,
 .about-content {
-    position: relative; /* Ensure content stays on top of the rectangle */
+    position: relative; 
     z-index: 1;
 }
 
@@ -139,7 +140,7 @@ body {
     font-size: 1.8rem;
     color: #000;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 /* Optional: Hover effect for image */
@@ -201,7 +202,7 @@ footer {
     position: absolute;
     width: 1067px;
     height: 438px;
-    background-color: #1e1e1e; /* Soft dark gray for black background */
+    background-color: #1e1e1e; 
     border-radius: 20px;
     z-index: 0;
     top: 0;
