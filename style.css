@@ -186,20 +186,6 @@ textarea.futuristic-input {
   opacity: 1;
 }
 
-.techy-navbar {
-  background: linear-gradient(135deg, rgba(0, 0, 50, 0.6), rgba(0, 100, 150, 0.6));
-  backdrop-filter: blur(10px);
-  border-radius: 50px;
-  padding: 1.5rem 2rem;
-  margin-top: 5rem;
-  width: 90%;
-  opacity: 0;
-  transform: translateY(-100%);
-  transition: transform 1s ease, opacity 1s ease;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
-  position: relative;
-  z-index: 1;
-}
 
 .techy-navbar.show-navbar {
   transform: translateY(0);
@@ -302,3 +288,4 @@ textarea.futuristic-input {
     display: none;
   }
 }
+

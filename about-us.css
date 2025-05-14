@@ -194,6 +194,28 @@ footer {
     .about-content {
         padding: 30px;
     }
+
+     .navbar {
+        background: transparent; 
+        box-shadow: none; 
+    }
+
+  
+    .navbar-toggler {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+    }
+
+    .navbar-brand {
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+   
+    .techy-navbar {
+        background: none;
+    }
 }
 
 .about-wrapper {
