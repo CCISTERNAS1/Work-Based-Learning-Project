@@ -74,7 +74,7 @@ body {
 }
 
 /* Layout for larger screens */
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
     .about-layout {
         flex-direction: column;
         padding: 40px 20px;
@@ -166,7 +166,7 @@ footer {
 }
 
 /* ========== Responsive Adjustments ========== */
-@media (max-width: 768px) {
+@media (max-width: 868px) {
     .team-member {
         display: block;
         margin: 20px auto;
