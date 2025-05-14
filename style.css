@@ -290,8 +290,15 @@ textarea.futuristic-input {
     text-align: right;
     padding: 15px;
   }
+  
 }
 
 .hero-section {
   margin-top: 50px; 
+}
+
+ @media (min-width: 992px) {
+  .navbar-toggler {
+    display: none;
+  }
 }
