@@ -276,16 +276,30 @@ textarea.futuristic-input {
     text-align: right;
     padding: 15px;
   }
-  
+
 }
 
 .hero-section {
-  margin-top: 50px; 
+  margin-top: 50px;
 }
 
- @media (min-width: 992px) {
+@media (min-width: 992px) {
   .navbar-toggler {
     display: none;
   }
 }
 
+@media (max-width: 991px) {
+  .navbar {
+    background: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 1rem !important;
+    max-width: 100% !important;
+  }
+
+  .navbar-toggler {
+    margin-top: 15px;
+    margin-right: 20px;
+  }
+}
