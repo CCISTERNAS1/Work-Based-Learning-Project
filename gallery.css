@@ -1,0 +1,72 @@
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(to bottom right, #0a0a0a, #111c2b);
+    color: #00f7ff;
+    min-height: 100vh;
+}
+
+
+h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    text-shadow:
+        0 0 10px #00f7ff,
+        0 0 20px #00f7ff;
+}
+
+
+
+
+.gallery-item {
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 247, 255, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.gallery-item:hover {
+    box-shadow:
+        0 0 25px #00f7ff,
+        0 0 40px #00bfff;
+    transform: translateY(-5px);
+}
+
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 247, 255, 0.6);
+    transition: transform 0.3s ease;
+    margin-bottom: 10px;
+}
+
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+
+.caption {
+    font-size: 1.1rem;
+    color: #00f7ff;
+    text-align: center;
+    text-shadow: 0 0 6px #00f7ff;
+    user-select: none;
+}
+
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
