@@ -1,13 +1,14 @@
 body {
-  background-image: url('https://www.transparenttextures.com/patterns/circuits.png');
-  background-color: #0a0a0a;
+  background: linear-gradient(to bottom right, #0a0a0a, #111c2b);
   background-size: auto;
   background-repeat: repeat;
   color: #ffffff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   position: relative;
+  font-family: "ethnocentric", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 body::before {
@@ -152,14 +153,12 @@ body.preload {
   background-color: #0d0d0d;
   border: 1px solid #555;
   color: #ffffff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   transition: all 0.3s ease;
 }
 
 .futuristic-input:focus {
   border-color: #00f7ff;
   box-shadow: 0 0 5px #00f7ff;
-  background-color: #121212;
 }
 
 .glow-button {
