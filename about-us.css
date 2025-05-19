@@ -120,7 +120,7 @@ body {
     height: 435px; 
     z-index: -1;  
     padding: 40px 0; 
-    max-width: 1070px;
+    max-width: 1065px;
     margin-top: 400px;
 }
 
@@ -215,6 +215,7 @@ footer {
     .techy-navbar {
         background: none;
     }
+    
 }
 
 .about-wrapper {
