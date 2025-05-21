@@ -115,23 +115,16 @@ body.preload {
   }
 }
 
-@keyframes slideDown {
+@keyframes expandFromCenter {
   0% {
+    transform: scaleX(0);
     opacity: 0;
-    transform: translateY(-100%);
   }
+
   100% {
+    transform: scaleX(1);
     opacity: 1;
-    transform: translateY(0);
   }
-}
-
-nav {
-  opacity: 0;
-}
-
-.navbar-slide-down {
-  animation: slideDown 0.8s ease-out forwards;
 }
 
 .navbar-expand-animate {
