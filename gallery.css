@@ -15,9 +15,6 @@ h1 {
         0 0 20px #00f7ff;
 }
 
-
-
-
 .partners-grid {
     padding-top: 20px;
 }
@@ -52,5 +49,51 @@ h1 {
 @media (max-width: 480px) {
     h1 {
         font-size: 2rem;
+    }
+}
+
+.gallery-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #00f7ff;
+    text-shadow: 0 0 10px #00f7ff;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 247, 255, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 247, 255, 0.6);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px #00f7ff, 0 0 40px #00bfff;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+    .gallery-item img {
+        height: 200px;
     }
 }
