@@ -74,16 +74,15 @@ body {
 @media (max-width: 768px) {
   .service-item {
     flex-direction: column !important;
-    max-width: 90%;
-    margin: 40px auto;
+    text-align: center;
   }
-  
-  .service-image,
-  .service-text {
-    max-width: 100%;
+  .service-image, .service-text {
+    padding: 10px 0;
   }
-  
   .service-image {
-    margin-bottom: 20px;
+    order: 0;
+  }
+  .service-text {
+    order: 1;
   }
 }
