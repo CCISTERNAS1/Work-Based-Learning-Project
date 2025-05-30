@@ -97,3 +97,16 @@ h1 {
         height: 200px;
     }
 }
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        max-height: 80px;      
+        width: auto;
+        margin: 0 auto;
+        object-fit: contain;
+    }
+
+    .carousel-inner {
+        padding: 10px 0;
+    }
+}

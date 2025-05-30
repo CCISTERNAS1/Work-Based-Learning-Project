@@ -44,3 +44,33 @@ margin-bottom: 10px;
   }
 }
 
+.scroll-down-arrow {
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 1.5s infinite;
+  z-index: 1000;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+.scroll-down-arrow svg {
+  display: block;
+}
+
+.contact-header h1 {
+  font-size: 3rem;
+  text-shadow: 0 0 10px #00f7ff, 0 0 20px #00bfff;
+  margin-top: 20px;
+}
+
