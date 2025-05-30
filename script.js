@@ -16,3 +16,9 @@ window.addEventListener("load", function () {
   }, 800); 
 });
 
+window.onload = () => {
+    document.querySelectorAll('.fade-in-up').forEach((el, index) => {
+      el.style.animationDelay = `${index * 0.2}s`;
+      el.classList.add('animate');
+    });
+  };
