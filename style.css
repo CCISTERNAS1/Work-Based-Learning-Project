@@ -134,6 +134,20 @@ body.preload {
   animation: expandFromCenter 0.8s ease-out forwards;
 }
 
+.navbar-toggle .line {
+  background: #fff;
+  height: 4px;
+  margin: 6px 0;
+  transition: 0.3s;
+}
+
+.navbar-toggle .long {
+  width: 35px;
+}
+
+.navbar-toggle .short {
+  width: 20px;
+}
 .inquiry-section {
   min-height: 100vh;
   padding: 30px 15px;
@@ -344,3 +358,4 @@ textarea.futuristic-input {
     transform: translateY(0);
   }
 }
+
