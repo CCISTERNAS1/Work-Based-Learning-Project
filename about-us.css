@@ -106,22 +106,22 @@ body {
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    font-size: 1rem;
-    line-height: 1.8;
+    font-size: 0.9rem;
+    line-height: 1.6;
     color: #333;
     margin-top: 60px;
 }
-
 
 .description {
     position: relative;
     z-index: 1;
     padding: 20px;
-    font-size: 1.2rem;
-    line-height: 2;
+    font-size: 1rem;
+    line-height: 1.8;
     text-align: justify;
-    color: #444;
+    color: black;
 }
+
 
 
 .about-wrapper {
@@ -209,4 +209,8 @@ footer {
     .techy-navbar {
         background: none;
     }
+}
+
+.about-content h2 {
+    font-size: 2rem;
 }
