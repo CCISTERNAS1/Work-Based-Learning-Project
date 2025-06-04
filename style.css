@@ -258,7 +258,7 @@ textarea.futuristic-input {
 
 .navbar {
   width: 100%;
-  max-width: 700px;
+  max-width: 750px;
   margin: 2rem auto 0 auto;
   padding: 0;
   position: relative;
@@ -379,3 +379,4 @@ textarea.futuristic-input {
     margin-bottom: 8px;
   }
 }
+
