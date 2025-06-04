@@ -86,3 +86,12 @@ h1 {
         font-size: 0.95rem;
     }
 }
+
+.partner-logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
