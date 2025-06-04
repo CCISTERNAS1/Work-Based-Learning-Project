@@ -85,4 +85,19 @@ body {
   .service-text {
     order: 1;
   }
+
+    .service-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .service-text p {
+    font-size: 1rem;
+  }
+
+    .service-image img {
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
 }

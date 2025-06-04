@@ -214,3 +214,28 @@ footer {
 .about-content h2 {
     font-size: 2rem;
 }
+
+@media (max-width: 600px) {
+    .about-content {
+        padding: 15px;
+        max-width: 90%;
+        margin-top: 30px;
+    }
+
+    .about-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .description {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-image {
+        max-width: 90%;
+        height: auto;
+    }
+}
